@@ -1,4 +1,6 @@
 ## Silhouette Validating Clustering Model (Unsupervised-Machine-Learning)
+![image](https://user-images.githubusercontent.com/92606737/219546163-a9446314-5ae4-4dd8-98d8-cdb665866b90.png)
+
 Silhouette is a metric used to evaluate the quality of clustering models in unsupervised machine learning. It is used to assess how well the data points within a cluster are separated from each other and how well they are grouped together relative to other clusters.
 
 ## Value Range (-1 to 1)
@@ -42,6 +44,35 @@ To calculate the Silhouette score for an entire clustering model, you simply tak
 s = (1/n) * sum(s(i)), where i = 1 to n.
 
 Here, n is the total number of data points in the model, and s(i) is the Silhouette score for each individual data point i.
+
+## Advantages
+The Silhouette method has several advantages for evaluating the quality of clustering models:
+
+- __Easy to interpret__
+
+  The Silhouette score provides a single numerical value that summarizes the quality of a clustering model, which makes it easy to interpret and compare across           different models.
+
+- __Does not rely on ground truth labels__
+
+    The Silhouette score is a model-based approach that does not require any prior knowledge of the true cluster assignments. This makes it useful for evaluating     unsupervised clustering models where the true labels are unknown.
+
+- __Works well with non-spherical clusters__
+
+    The Silhouette method is not affected by the shape of the clusters, so it can be used to evaluate clustering models that contain non-spherical clusters or clusters of different sizes.
+
+- __Handles noise well__
+    
+    The Silhouette method can handle noisy data points or outliers because it does not assume that all data points belong to a cluster.
+
+- __Flexible__
+  
+  The Silhouette method can be used with different distance metrics and clustering algorithms, which makes it a flexible tool for evaluating various types of clustering models.
+
+- __Provides insight into individual data points__
+    
+    The Silhouette score can be computed for each individual data point, which provides insight into which data points are well-clustered and which ones may be misclustered. This can be useful for further refining the clustering model or for identifying outliers or anomalies.
+
+Overall, the Silhouette method is a useful tool for evaluating the quality of clustering models, especially in cases where the true labels are unknown or where the clusters may have non-spherical shapes or different sizes.
 
 
 ## Conclusion
