@@ -74,6 +74,32 @@ The Silhouette method has several advantages for evaluating the quality of clust
 
 Overall, the Silhouette method is a useful tool for evaluating the quality of clustering models, especially in cases where the true labels are unknown or where the clusters may have non-spherical shapes or different sizes.
 
+## Disadvantage
+
+While the Silhouette method has many advantages, there are also some limitations and potential drawbacks to be aware of:
+
+- __Only evaluates internal consistency__
+
+    The Silhouette method only evaluates how well data points are grouped together within clusters, and does not take into account the external validity of the clustering model (i.e., how well the clusters correspond to some external criterion or labeling). Therefore, the Silhouette method may not be suitable for all clustering problems.
+
+- __Sensitivity to choice of distance metric__
+   
+   The Silhouette method relies on a distance metric to calculate the dissimilarity between data points, and the choice of metric can affect the results. In some cases, it may be necessary to experiment with different distance metrics to find the one that works best for the specific problem at hand.
+
+- __Sensitive to cluster shape and size__
+
+   Although the Silhouette method is designed to handle non-spherical clusters and clusters of different sizes, it may still be sensitive to the shape and size of the clusters. In particular, it may not work well with very complex or irregularly shaped clusters, or with clusters that are highly imbalanced in terms of size.
+
+- __Computationally expensive__
+
+    The Silhouette method requires computing the pairwise distances between all data points, which can be computationally expensive for large datasets. Additionally, computing the Silhouette score for each data point can also be time-consuming.
+
+- __Can be difficult to interpret__ 
+
+   While the Silhouette score provides a single numerical value that summarizes the quality of a clustering model, it can be difficult to interpret in some cases. For example, it may not be clear what a "good" or "bad" Silhouette score is for a particular problem, and different researchers may have different opinions on what constitutes a good clustering model.
+
+Overall, the Silhouette method is a useful tool for evaluating the quality of clustering models, but it is not without its limitations and potential drawbacks. It is important to be aware of these issues and to use the Silhouette method in combination with other techniques to ensure that the clustering model is appropriate for the specific problem at hand.
+
 
 ## Conclusion
 In general, a higher Silhouette score indicates a better clustering model, but the optimal score may depend on the specific problem and the domain of the data being clustered. Therefore, it is often necessary to compare the Silhouette scores of multiple models to determine which one performs the best.
