@@ -101,5 +101,20 @@ While the Silhouette method has many advantages, there are also some limitations
 Overall, the Silhouette method is a useful tool for evaluating the quality of clustering models, but it is not without its limitations and potential drawbacks. It is important to be aware of these issues and to use the Silhouette method in combination with other techniques to ensure that the clustering model is appropriate for the specific problem at hand.
 
 
+## When to use?
+The Silhouette method is a useful technique for evaluating the quality of clustering models, especially in unsupervised machine learning tasks where the true labels or categories of the data are unknown. Here are some situations where you might consider using the Silhouette method:
+
+- __Evaluating different clustering algorithms__
+
+   If you are working on a clustering problem and have multiple algorithms to choose from, you can use the Silhouette method to compare their performance and select the best one.
+
+- __Determining the optimal number of clusters__
+
+    The Silhouette method can be used to find the optimal number of clusters for a given dataset. You can try different numbers of clusters and compute the Silhouette score for each one to identify the number of clusters that produces the highest overall score.
+
+- __Detecting outliers or anomalies__ 
+
+   The Silhouette method can be used to identify individual data points that are poorly clustered or that may be outliers or anomalies. You can compute the Silhouette score for each data point and look for points with low scores, which may indicate that they are misclustered.
+
 ## Conclusion
 In general, a higher Silhouette score indicates a better clustering model, but the optimal score may depend on the specific problem and the domain of the data being clustered. Therefore, it is often necessary to compare the Silhouette scores of multiple models to determine which one performs the best.
